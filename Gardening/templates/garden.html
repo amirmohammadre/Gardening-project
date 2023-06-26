@@ -1,0 +1,52 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Garden</title>
+</head>
+<body>
+
+    
+    <h1>Table Garden</h1>
+    <hr>
+    <br>
+
+    <table>
+        
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Area</th>
+          <th>Cultivation Pattern</th>
+          <th>Creation Date</th>
+          <th>Edit Date</th>
+        </tr>
+
+        
+        {% for garden in gardens %}
+        <tr>
+          <td> {{ garden.name }} </td>
+          <td> {{ garden.address }} </td>
+          <td> {{ garden.area }} m<sup>2</sup></td>
+          <td> {{ garden.cultivation_pattern }} </td>
+          <td> {{ garden.creation_date }} </td>
+          <td> {{ garden.edit_date }} </td>
+        </tr>
+        {% endfor %}
+        
+        
+        
+        
+        
+    
+    
+    </table>
+      
+
+</body>
+</html>
