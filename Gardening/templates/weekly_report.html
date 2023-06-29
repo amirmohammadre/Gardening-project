@@ -23,7 +23,13 @@
           <th>Description</th>
         </tr>
 
-    
+	{% for report in reports %}
+	<tr>
+		<td> {{ report.report_date }} </td>
+		<td> {{ report.description }} </td>
+   	</tr>
+	{% endfor %}
+
     </table>
 
     

@@ -11,10 +11,12 @@ def garden(request):
 
 
 def cultivation(request):
-    return render(request, 'cultivation.html')
+    all = Cultivation.objects.all()
+    return render(request, 'cultivation.html', {'cultivations' : all})
 
 
 def weeklyReport(request):
-    return render(request, 'weekly_report.html')
+    all = WeeklyReport.objects.all()
+    return render(request, 'weekly_report.html', {'reports' : all})
 
 

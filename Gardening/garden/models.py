@@ -14,7 +14,7 @@ class Garden(models.Model):
 class Cultivation(models.Model):
     garden = models.ForeignKey(Garden, on_delete = models.CASCADE)
     cultivation_date = models.DateField()
-    piece_number = models.IntegerField()
+    piece_number = models.PositiveIntegerField()
 
 
 

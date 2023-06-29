@@ -7,6 +7,20 @@ hr {
   border: 1px dashed black;
 }
 
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+tr:hover { 
+  background-color: lightblue;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

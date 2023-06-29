@@ -23,7 +23,12 @@
           <th>Piece Number</th>
         </tr>
 
-                
+	{% for cultivation in cultivations %}                
+	<tr>
+		<td> {{ cultivation.cultivation_date }} </td>
+		<td> {{ cultivation.piece_number }} </td>
+	</tr>
+	{% endfor %}
     
     </table>
 
