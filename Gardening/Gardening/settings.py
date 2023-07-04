@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'garden',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
