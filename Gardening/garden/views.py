@@ -31,6 +31,11 @@ class GardenList(generics.ListCreateAPIView):
     serializer_class = GardenSerializer
 
 
+class GardenDelete(generics.DestroyAPIView):
+    queryset = Garden.objects.all()
+    serializer_class = GardenSerializer
+
+
 class CultivationList(generics.ListCreateAPIView):
     queryset = Cultivation.objects.all()
     serializer_class = CultivationSerializer
